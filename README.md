@@ -1,1 +1,0 @@
-# babam-dogum-gunu
