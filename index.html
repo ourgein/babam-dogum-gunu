@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Babama Özel Site 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="stars"></div>
+            <h1 class="title">
+                <span class="title-main">🎊 Babama Özel Site 🎊</span>
+                <span class="title-sub">En Harika Babaya!</span>
+            </h1>
+            <div class="floating-hearts">
+                <div class="heart">❤️</div>
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+                <div class="heart">💝</div>
+            </div>
+        </header>
+
+        <!-- Welcome Message -->
+        <section class="welcome-section">
+            <div class="welcome-card">
+                <h2>👋 Merhaba Baba!</h2>
+                <p>Senin için özel olarak hazırladığım bu sitede seni bekleyen sürprizler var! Hazır mısın? 🚀</p>
+                <button class="cta-button" onclick="startAdventure()">
+                    <i class="fas fa-rocket"></i>
+                    Maceraya Başla!
+                </button>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz-section" id="quizSection" style="display: none;">
+            <div class="quiz-container">
+                <h2>🧠 Baba Quiz'i 🧠</h2>
+                <p class="quiz-description">Seni ne kadar iyi tanıdığımı test edelim! 😄</p>
+                
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">1 / 5</span>
+                </div>
+
+                <div class="question-card" id="questionCard">
+                    <h3 class="question" id="questionText"></h3>
+                    <div class="options" id="options"></div>
+                </div>
+
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <h3>🎉 Quiz Tamamlandı! 🎉</h3>
+                    <div class="score-display" id="scoreDisplay"></div>
+                    <p class="result-message" id="resultMessage"></p>
+                    <button class="restart-button" onclick="restartQuiz()">
+                        <i class="fas fa-redo"></i>
+                        Tekrar Oyna
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Section -->
+        <section class="memory-section" id="memorySection" style="display: none;">
+            <h2>💭 Güzel Anılar 💭</h2>
+            <div class="memory-grid">
+                <div class="memory-card">
+                    <div class="memory-icon">🏠</div>
+                    <h3>Evimiz</h3>
+                    <p>Birlikte geçirdiğimiz güzel anıların yuvası</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-icon">🎂</div>
+                    <h3>Doğum Günleri</h3>
+                    <p>Her yıl kutladığımız özel günler</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-icon">🎄</div>
+                    <h3>Bayramlar</h3>
+                    <p>Ailece bir araya geldiğimiz mutlu zamanlar</p>
+                </div>
+                <div class="memory-card">
+                    <div class="memory-icon">🌞</div>
+                    <h3>Tatiller</h3>
+                    <p>Birlikte gezdiğimiz, eğlendiğimiz yerler</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section" id="messageSection" style="display: none;">
+            <div class="message-card">
+                <h2>💌 Babama Mesajım 💌</h2>
+                <div class="message-content">
+                    <p>Sevgili Baba,</p>
+                    <p>Sen benim hayatımdaki en önemli insanlardan birisin. Her zaman yanımda olduğun, beni desteklediğin ve sevdiğin için sana çok teşekkür ederim.</p>
+                    <p>Seni çok seviyorum! 💕</p>
+                    <div class="signature">
+                        <p>Sevgilerle,</p>
+                        <p class="signature-name">Çocuğun ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️ for the best dad in the world!</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-heart"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
